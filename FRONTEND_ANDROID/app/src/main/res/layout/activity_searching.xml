@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:iconifiedByDefault="false"
+        android:background="@drawable/search_view_shape"
+        android:layout_margin="6dp"
+        android:focusable="true"
+        app:queryHint="Search a Song">
+        <requestFocus />
+    </androidx.appcompat.widget.SearchView>
+
+    <ListView
+        android:id="@+id/listViewSearching"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/searchView"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@drawable/scroll_bar_thumb" />
+
+</RelativeLayout>

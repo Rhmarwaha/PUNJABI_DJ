@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RequestSongActivity">
+
+    <LinearLayout
+        android:id="@+id/banner_container_request_song"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"/>
+
+    <ImageView
+        android:src="@drawable/logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_above="@+id/nameTextView"/>
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:text="Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nameRequestSong"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:layout_margin="4dp"/>
+
+    <EditText
+        android:id="@+id/nameRequestSong"
+        android:layout_width="match_parent"
+        android:hint="Name"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:text="Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:layout_margin="4dp"
+        android:layout_below="@+id/nameRequestSong" />
+
+    <EditText
+        android:id="@+id/descriptionRequestSong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:layout_below="@+id/descriptionTextView" />
+
+    <Button
+        android:id="@+id/requestSongButton"
+        android:text="Request"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:layout_height="70dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"/>
+
+</RelativeLayout>

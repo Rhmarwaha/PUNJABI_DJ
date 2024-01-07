@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/favourites"
+        android:title="Favourites"/>
+
+    <item
+        android:id="@+id/shareAppButton"
+        android:title="Share App"/>
+
+    <item
+        android:id="@+id/instagramPage"
+        android:title="Instagram Page"/>
+
+    <item
+        android:id="@+id/facebookPage"
+        android:title="Facebook Page"/>
+
+    <item
+        android:id="@+id/rateus"
+        android:title="Rate Us"/>
+
+    <item
+        android:id="@+id/request"
+        android:title="Request A Song"/>
+
+</menu>
